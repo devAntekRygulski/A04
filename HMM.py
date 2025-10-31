@@ -265,7 +265,7 @@ def main():
         if wLow in typoLex:
             decodedLow = typoLex[wLow]
         else:
-            # otherwise, use HMM/Viterbi
+            # otherwise use HMM/Viterbi
             decodedLow = viterbiDecode(wLow, states, trans, emit)
 
         restored = decodedLow
